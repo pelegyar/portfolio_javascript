@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../images/Pink.png");
+  background-size: fill;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.container {
+  height: 640px;
+  width: 568px;
+  background-color: rgba(26, 26, 26, 0.831372549);
+  text-align: center;
+  display: flex;
+  margin-top: 157px;
+  margin-right: 295px;
+}
+.container .form-container {
+  color: #fff;
+  text-align: center;
+  width: 418px;
+  margin: auto;
+}
+.container .form-container h1 {
+  font-family: heebo;
+  font-size: 36px;
+  font-weight: 900;
+  margin-bottom: 21px;
+}
+.container .form-container p {
+  font-family: heebo;
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 44px;
+}
+.container .form-container form .label-container {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  margin-bottom: 18px;
+}
+.container .form-container form .label-container label {
+  font-family: heebo;
+  font-size: 16px;
+  font-weight: bold;
+}
+.container .form-container form .label-container input {
+  border: #D31C75 solid 1px;
+  background-color: #fff;
+  height: 50px;
+  width: 418px;
+}
+.container .form-container .button {
+  font-family: heebo;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: #D31C75;
+  width: 166px;
+  height: 50px;
+  text-align: center;
+  line-height: 2;
+}
+
+@media screen and (max-width: 370px) {
+  body {
+    background-image: url("../images/Pink-small.png");
+    display: flex;
+  }
+  .container {
+    margin: auto;
+    width: 298px;
+    height: 440px;
+  }
+  .container .form-container {
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+  }
+  .container .form-container h1 {
+    font-size: 25px;
+    width: 146px;
+    align-self: center;
+    margin-bottom: 12px;
+  }
+  .container .form-container p {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .container .form-container form .label-container label {
+    font-size: 14px;
+  }
+  .container .form-container form .label-container input {
+    width: 230px;
+    height: 28px;
+  }
+  .container .form-container .button {
+    width: 76px;
+    height: 33px;
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=style.css.map */

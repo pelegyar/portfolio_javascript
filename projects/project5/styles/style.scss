@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E5EEFF;
+    display: flex;
+}
+
+@mixin assistant ($fz , $fw) {
+    font-family: assistant;
+    font-size: $fz;
+    font-weight: $fw;
+}
+
+.box-up-mobile {
+    display: none;
+}
+
+.container {
+    margin: 250px auto;
+    width: 1246px;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    gap: 20px;
+    grid-template-areas:
+        "img2 img1 box-up box-up"
+        "img4 img3 box-up box-up"
+        "img6 img5 img7 img8"
+        "box-down box-down img9 img10"
+        "box-down box-down img11 img12"
+        "box-down box-down img13 img14";
+
+    .box-up {
+        grid-area: box-up;
+        background-color: #020253;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .headline-container {
+            h1 {
+                @include assistant(61px, bold);
+                color: #0EE1DA;
+                margin-bottom: 19px;
+            }
+
+            p {
+                @include assistant(20px, 400);
+                color: #F9F9F9;
+                width: 475px;
+            }
+        }
+
+    }
+
+    .box-down {
+        grid-area: box-down;
+        background-color: #8E097C;
+        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        .sub-container {
+            h1 {
+                @include assistant(35, bold);
+                margin-bottom: 23px;
+
+            }
+
+            p {
+                @include assistant(20px, 400);
+                color: #F9F9F9;
+                width: 475px;
+                margin-bottom: 70px;
+            }
+
+            .form-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                form {
+                    width: 500px;
+
+                    .label-container {
+                        color: #0EE1DA;
+                        text-align: right;
+                        margin-bottom: 20px;
+                        display: flex;
+                        flex-direction: column;
+
+                        label {
+                            @include assistant(24px, bold);
+
+                        }
+
+                        input {
+                            width: 500px;
+                            height: 60px;
+                            background-color: #E5EEFF;
+                            border: none;
+                            border-bottom: 5px solid #0EE1DA;
+                        }
+
+                        .bigger {
+                            height: 172px;
+                        }
+                    }
+
+                    .button {
+                        @include assistant(24px, bold);
+                        width: 501px;
+                        height: 59px;
+                        background-color: #0EE1DA;
+                        line-height: 2.5;
+                        color: #011560;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .img {
+        width: 296px;
+        height: 271px
+    }
+
+    .img1 {
+        grid-area: img1;
+
+    }
+
+    .img2 {
+        grid-area: img2;
+
+    }
+
+    .img3 {
+        grid-area: img3;
+
+    }
+
+    .img4 {
+        grid-area: img4;
+
+    }
+
+    .img5 {
+        grid-area: img5;
+
+    }
+
+    .img6 {
+        grid-area: img6;
+
+    }
+
+    .img7 {
+        grid-area: img7;
+
+    }
+
+    .img8 {
+        grid-area: img8;
+
+    }
+
+    .img9 {
+        grid-area: img9;
+
+    }
+
+    .img10 {
+        grid-area: img10;
+
+    }
+
+    .img11 {
+        grid-area: img11;
+
+    }
+
+    .img12 {
+        grid-area: img12;
+
+    }
+
+    .img13 {
+        grid-area: img13;
+
+    }
+
+    .img14 {
+        grid-area: img14;
+
+    }
+}
+
+@media screen and (max-width:570px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box-up-mobile {
+        background-color: #020253;
+        display: block;
+        height: 340px;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .headline-container-mobile {
+            text-align: center;
+
+            h1 {
+                @include assistant(36px, bold);
+                color: #0EE1DA;
+                margin-bottom: 14px;
+            }
+
+            p {
+                @include assistant(20px, 400);
+                color: #F9F9F9;
+                width: 278px;
+            }
+        }
+    }
+
+    .container {
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(10, auto);
+        gap: 12px;
+        margin: 20px 0 30px;
+        width: 330px;
+        grid-template-areas:
+            "img1 img2"
+            "img3 img4"
+            "img5 img6"
+            "img7 img8"
+            "box-down box-down"
+            "box-down box-down"
+            "box-down box-down"
+            "img9 img10"
+            "img11 img12"
+            "img13 img14";
+
+
+        .img {
+            width: 158px;
+            height: 145px;
+
+
+        }
+
+        .box-up {
+            display: none;
+        }
+
+        .box-down {
+            width: 330px;
+            height: 518px;
+
+
+            .sub-container {
+                h1 {
+                    font-size: 25px;
+                }
+
+                p {
+                    font-size: 15px;
+                    width: 278px;
+                }
+
+                .form-container {
+                    form {
+                        width: 278px;
+
+                        .label-container {
+                            label {
+                                font-size: 7px;
+                                margin-bottom: 12px;
+                            }
+
+                            input {
+                                width: 278px;
+                                height: 33px;
+                                border-bottom: 3px solid #0EE1DA;
+                            }
+
+                            .bigger {
+                                height: 95px;
+                            }
+                        }
+
+                        .button {
+                            width: 278px;
+                            height: 33px;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

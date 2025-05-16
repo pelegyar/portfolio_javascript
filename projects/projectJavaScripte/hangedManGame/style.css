@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+#word {
+    font-size: 36px;
+    letter-spacing: 15px;
+    margin: 20px 0;
+}
+
+#wrong-letters {
+    color: red;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#message {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* ציור האיש */
+#hangman {
+    position: relative;
+    width: 200px;
+    height: 250px;
+    margin: 0 auto 20px;
+}
+
+/* Gallows */
+#gallows {
+    width: 120px;
+    height: 10px;
+    background: black;
+    position: absolute;
+    top: 0;
+    left: 40px;
+}
+
+#gallows::after {
+    content: '';
+    position: absolute;
+    height: 200px;
+    width: 10px;
+    background: black;
+    left: 0;
+    top: 0;
+}
+
+#gallows::before {
+    content: '';
+    position: absolute;
+    height: 10px;
+    width: 60px;
+    background: black;
+    left: -50px;
+    top: 190px;
+}
+
+/* חלקי הגוף */
+.part {
+    display: none;
+    background: black;
+    position: absolute;
+}
+
+#head {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    top: 20px;
+    left: 90px;
+}
+
+#body {
+    width: 10px;
+    height: 60px;
+    top: 50px;
+    left: 105px;
+}
+
+#left-arm {
+    width: 40px;
+    height: 10px;
+    top: 60px;
+    left: 65px;
+    transform: rotate(-30deg);
+}
+
+#right-arm {
+    width: 40px;
+    height: 10px;
+    top: 60px;
+    left: 105px;
+    transform: rotate(30deg);
+}
+
+#left-leg {
+    width: 40px;
+    height: 10px;
+    top: 110px;
+    left: 65px;
+    transform: rotate(30deg);
+}
+
+#right-leg {
+    width: 40px;
+    height: 10px;
+    top: 110px;
+    left: 105px;
+    transform: rotate(-30deg);
+}

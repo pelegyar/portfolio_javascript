@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../images/blue.png");
+  background-size: fill;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 1100px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 282px;
+}
+.container h1 {
+  font-family: Assistant;
+  font-size: 86px;
+  font-weight: bold;
+  color: #D3E10E;
+}
+.container p {
+  font-family: Assistant;
+  font-size: 20px;
+  font-weight: 400;
+  color: #F9F9F9;
+  margin-bottom: 382px;
+}
+.container form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.container form .label-container {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+.container form .label-container label {
+  font-family: Assistant;
+  font-size: 16px;
+  font-weight: bold;
+  color: #011560;
+}
+.container form .label-container input {
+  background-color: #F6F6F6;
+  border: none;
+  width: 417px;
+  height: 50px;
+  border-bottom: 4px solid #D3E10E;
+}
+.container form .button {
+  font-family: Assistant;
+  font-size: 22px;
+  font-weight: bold;
+  width: 166px;
+  height: 50px;
+  background-color: #D3E10E;
+  color: #011560;
+  text-align: center;
+  line-height: 2;
+}
+
+@media screen and (max-width: 370px) {
+  body {
+    background-image: url("../images/blue-small.png");
+    align-items: center;
+    height: 100vh;
+  }
+  .container {
+    width: 286px;
+    margin: 0;
+  }
+  .container h1 {
+    font-size: 24px;
+  }
+  .container p {
+    font-size: 16px;
+    margin-bottom: 180px;
+  }
+  .container form {
+    flex-direction: column;
+  }
+  .container form .label-container {
+    margin-bottom: 17px;
+  }
+  .container form .label-container label {
+    font-size: 10px;
+  }
+  .container form .label-container input {
+    border-bottom: #D3E10E solid 3px;
+    background-color: #E5EEFF;
+    height: 35px;
+    width: 285px;
+  }
+  .container form .button {
+    font-size: 14px;
+    height: 35px;
+    width: 286px;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+}
+.container .form-container {
+  width: 960px;
+  display: flex;
+  justify-content: center;
+}
+.container .form-container .form {
+  margin-top: 270px;
+}
+.container .form-container .form form {
+  width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: right;
+}
+.container .form-container .form form h3 {
+  font: normal bolder 43px Heebo;
+  color: #020253;
+}
+.container .form-container .form form p {
+  font: normal normal normal 20px/29px Heebo;
+  color: #020253;
+  margin-bottom: 15px;
+}
+.container .form-container .form form .form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.container .form-container .form form .form-control label {
+  font: bold 16px/24px Heebo;
+  color: #2C2C2C;
+}
+.container .form-container .form form .form-control input {
+  background-color: #E5EEFF;
+  border: none;
+  border-bottom: solid #020253 3px;
+  width: 420px;
+  height: 50px;
+}
+.container .form-container .form form .button-control {
+  margin-top: 15px;
+  width: 166px;
+  height: 50px;
+  text-align: center;
+}
+.container .form-container .form form .button-control button {
+  border: none;
+  width: 100%;
+  height: 100%;
+  background-color: #020253;
+  font: normal normal bold 22px/30px Heebo;
+  color: #FFFFFF;
+}
+.container .img-container {
+  display: block;
+}
+
+@media screen and (max-width: 540px) {
+  .container {
+    height: 100vh;
+    flex-direction: column-reverse;
+  }
+  .container .form-container {
+    width: 100vw;
+    height: 67vh;
+  }
+  .container .form-container .form {
+    margin: auto;
+    width: 286px;
+  }
+  .container .form-container .form form {
+    width: 286px;
+  }
+  .container .form-container .form form .form-control label {
+    font-size: 10px;
+  }
+  .container .form-container .form form .form-control input {
+    width: 285px;
+    height: 34px;
+  }
+  .container .form-container .form form h3 {
+    font-size: 28px;
+    width: 236px;
+    margin-bottom: 15px;
+  }
+  .container .form-container .form form p {
+    font-size: 15px;
+  }
+  .container .form-container .form form .button-control {
+    height: 34px;
+    width: 286px;
+  }
+  .container .form-container .form form .button-control button {
+    font-size: 14px;
+  }
+  .container .img-container {
+    width: 100vw;
+    height: 33vh;
+  }
+  .container .img-container img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}/*# sourceMappingURL=main.css.map */

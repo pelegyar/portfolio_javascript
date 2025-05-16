@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(to bottom, #281EFF, #2DFF8C);
+  display: flex;
+}
+
+.container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.container h1 {
+  color: #FFF;
+  font-family: satisfy;
+  font-size: 160px;
+  text-align: center;
+  text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5294117647);
+}
+.container h2 {
+  font-family: "Varela Round";
+  color: #FFF;
+  font-size: 32px;
+  text-align: center;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+.container p {
+  width: 1030px;
+  color: #FFF;
+  font-family: "Varela Round";
+  font-size: 1rem;
+}
+.container .formCon {
+  display: flex;
+  flex-direction: row;
+  width: 1100px;
+  justify-content: space-between;
+  margin: 70px;
+  align-items: end;
+}
+.container .formCon form {
+  display: flex;
+  flex-direction: row;
+  width: 820px;
+  justify-content: space-between;
+}
+.container .formCon form .labelCon {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  text-align: right;
+}
+.container .formCon form .labelCon label {
+  font-family: "Varela Round";
+  font-size: 16px;
+  color: #FFF;
+}
+.container .formCon form .labelCon input {
+  border: 1px solid #FFF;
+  background-color: rgba(246, 246, 246, 0.1411764706);
+  height: 50px;
+}
+.container .formCon .sendButton {
+  height: 50px;
+  width: 250px;
+  background-color: #FFF;
+  text-align: center;
+  color: #1c1c1c;
+  font-size: 16px;
+  font-family: "Varela Round";
+  line-height: 3;
+}
+
+@media screen and (max-width: 570px) {
+  .container {
+    width: 90vw;
+  }
+  .container h1 {
+    font-size: 60px;
+    margin-bottom: 30px;
+  }
+  .container h2 {
+    font-size: 18px;
+  }
+  .container p {
+    font-size: 16px;
+    width: 85vw;
+  }
+  .container .formCon {
+    flex-direction: column;
+    width: 300px;
+    align-items: center;
+  }
+  .container .formCon form {
+    width: 300px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container .formCon form .labelCon {
+    width: 300px;
+    margin-bottom: 15px;
+  }
+  .container .formCon form .labelCon label {
+    font-size: 11px;
+  }
+  .container .formCon form .labelCon input {
+    height: 36px;
+    width: 300px;
+  }
+  .container .formCon .sendButton {
+    height: 33px;
+    width: 300px;
+    font-size: 11px;
+  }
+}/*# sourceMappingURL=main.css.map */

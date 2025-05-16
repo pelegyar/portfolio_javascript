@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+}
+
+.image-section {
+  width: 45vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.image-section .separetor {
+  height: 18px;
+  width: 50%;
+  background-color: #FDBD03;
+}
+.image-section .image-container {
+  flex-grow: 1;
+  display: flex;
+}
+.image-section .image-container img {
+  margin: auto;
+}
+
+.contact-section {
+  width: 55vw;
+  height: 100vh;
+  border-bottom: 18px solid #FDBD03;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contact-section .whatsapp, .contact-section .social .icon {
+  width: 95px;
+  height: 95px;
+  background-color: #FDBD03;
+  border-radius: 50%;
+  display: flex;
+  margin: 38px;
+  align-self: flex-end;
+}
+.contact-section .whatsapp img, .contact-section .social .icon img {
+  width: 54px;
+  height: 54px;
+  margin: auto;
+}
+.contact-section .headline {
+  width: 385px;
+}
+.contact-section .headline h1 {
+  font-family: heebo;
+  font-size: 66px;
+  font-weight: 900;
+  color: #FDBD03;
+}
+.contact-section .headline p {
+  font-family: heebo;
+  font-size: 20px;
+  font-weight: 400;
+  color: #020253;
+  margin-top: 15px;
+}
+.contact-section form {
+  width: 855px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 88px;
+}
+.contact-section form .label-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.contact-section form .label-container label {
+  font-family: heebo;
+  font-size: 16px;
+  font-weight: bold;
+  color: #2C2C2C;
+}
+.contact-section form .label-container input {
+  border: none;
+  border-bottom: 4px solid #FDBD03;
+  background-color: #E5EEFF;
+  height: 50px;
+  width: 417px;
+}
+.contact-section form .label-container .bigger {
+  width: 855px;
+  height: 142px;
+}
+.contact-section form .button {
+  font-family: heebo;
+  font-size: 22px;
+  font-weight: bold;
+  color: #000;
+  background-color: #FDBD03;
+  width: 199px;
+  height: 50px;
+  text-align: center;
+  margin-top: 82px;
+  line-height: 2.5;
+}
+.contact-section .social {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.contact-section .social .icon img {
+  height: 32px;
+}
+
+@media screen and (max-width: 570px) {
+  body {
+    flex-direction: column;
+  }
+  .image-section {
+    width: 100vw;
+    height: 30vh;
+  }
+  .image-section .separetor {
+    height: 10px;
+    width: 85vw;
+  }
+  .image-section .image-container img {
+    width: 20vw;
+  }
+  .contact-section {
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+    align-items: center;
+    border-bottom: 10px solid #FDBD03;
+  }
+  .contact-section .whatsapp, .contact-section .social .icon {
+    display: none;
+  }
+  .contact-section .headline {
+    width: 80vw;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .contact-section .headline h1 {
+    font-size: 40px;
+  }
+  .contact-section .headline p {
+    font-size: 15px;
+  }
+  .contact-section form {
+    width: 84vw;
+    margin-bottom: 128px;
+  }
+  .contact-section form .label-container label {
+    font-size: 10px;
+  }
+  .contact-section form .label-container input {
+    width: 84vw;
+    height: 37px;
+    border-bottom: 3px solid #FDBD03;
+  }
+  .contact-section form .label-container .bigger {
+    width: 84vw;
+    height: 105px;
+    margin-bottom: 0;
+  }
+  .contact-section form .button {
+    width: 84vw;
+    font-size: 15px;
+    margin-top: 0;
+  }
+  .contact-section .social {
+    justify-content: center;
+  }
+  .contact-section .social .icon {
+    display: block;
+    display: flex;
+    width: 45px;
+    height: 45px;
+    margin: 17px;
+  }
+  .contact-section .social .icon img {
+    margin: auto;
+    height: 15px;
+  }
+}/*# sourceMappingURL=style.css.map */

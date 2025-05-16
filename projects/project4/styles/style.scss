@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/blue.png");
+    background-size: fill;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+@mixin assitsant($fz , $fw) {
+    font-family: Assistant;
+    font-size: $fz;
+    font-weight: $fw;
+}
+
+.container {
+    width: 1100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 282px;
+
+    h1 {
+        @include assitsant(86px, bold);
+        color: #D3E10E;
+    }
+
+    p {
+        @include assitsant(20px, 400);
+        color: #F9F9F9;
+        margin-bottom: 382px;
+
+    }
+
+    form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        .label-container {
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+
+            label {
+                @include assitsant(16px, bold);
+                color: #011560;
+            }
+
+            input {
+                background-color: #F6F6F6;
+                border: none;
+                width: 417px;
+                height: 50px;
+                border-bottom: 4px solid #D3E10E;
+            }
+        }
+
+        .button {
+            @include assitsant(22px, bold);
+            width: 166px;
+            height: 50px;
+            background-color: #D3E10E;
+            color: #011560;
+            text-align: center;
+            line-height: 2;
+        }
+    }
+}
+
+@media screen and (max-width:370px) {
+    body {
+        background-image: url("../images/blue-small.png");
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container {
+        width: 286px;
+
+        margin: 0;
+
+        h1 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 180px;
+
+        }
+
+        form {
+            flex-direction: column;
+
+            .label-container {
+
+                margin-bottom: 17px;
+
+                label {
+                    font-size: 10px;
+                }
+
+                input {
+                    border-bottom: #D3E10E solid 3px;
+                    background-color: #E5EEFF;
+                    height: 35px;
+                    width: 285px;
+
+                }
+            }
+
+            .button {
+                font-size: 14px;
+                height: 35px;
+                width: 286px;
+            }
+        }
+    }
+}

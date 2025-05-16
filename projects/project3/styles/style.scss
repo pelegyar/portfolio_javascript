@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/Pink.png");
+    background-size: fill;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+@mixin heebo ($fz, $fw) {
+    font-family: heebo;
+    font-size: $fz;
+    font-weight: $fw;
+}
+
+.container {
+    height: 640px;
+    width: 568px;
+    background-color: #1A1A1AD4;
+    text-align: center;
+    display: flex;
+    margin-top: 157px;
+    margin-right: 295px;
+
+
+    .form-container {
+        color: #fff;
+        text-align: center;
+        width: 418px;
+        margin: auto;
+
+        h1 {
+            @include heebo(36px, 900);
+            margin-bottom: 21px;
+        }
+
+        p {
+            @include heebo(20px, normal);
+            margin-bottom: 44px;
+        }
+
+        form {
+            .label-container {
+                display: flex;
+                flex-direction: column;
+                text-align: right;
+                margin-bottom: 18px;
+
+                label {
+                    @include heebo(16px, bold);
+                }
+
+                input {
+                    border: #D31C75 solid 1px;
+                    background-color: #fff;
+                    height: 50px;
+                    width: 418px;
+
+                }
+            }
+
+
+        }
+
+        .button {
+            @include heebo(22px, bold);
+            background-color: #D31C75;
+            width: 166px;
+            height: 50px;
+            text-align: center;
+            line-height: 2;
+        }
+    }
+}
+
+@media screen and (max-width:370px) {
+    body {
+        background-image: url("../images/Pink-small.png");
+        display: flex;
+    }
+
+    .container {
+        margin: auto;
+        width: 298px;
+        height: 440px;
+
+        .form-container {
+            width: 230px;
+            display: flex;
+            flex-direction: column;
+
+            h1 {
+                font-size: 25px;
+                width: 146px;
+                align-self: center;
+                margin-bottom: 12px;
+            }
+
+            p {
+                font-size: 15px;
+                margin-bottom: 20px;
+            }
+
+            form {
+                .label-container {
+                    label {
+                        font-size: 14px;
+                    }
+
+                    input {
+                        width: 230px;
+                        height: 28px;
+                    }
+                }
+            }
+
+            .button {
+                width: 76px;
+                height: 33px;
+                font-size: 15px;
+            }
+        }
+    }
+}

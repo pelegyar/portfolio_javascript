@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="level_select">
+        <button id="easyButton">Easy</button>
+        <button id="mediumButton">Medium</button>
+        <button id="hardButton">Hard</button>
+        <span>How many images? <span id="level_span">&nbsp;</span></span>
+    </div>
+
+    <div class="status_bar">
+        <span id="moves">Moves: 0</span>
+        <span id="timer">Time: 0s</span>
+    </div>
+
+    <div class="game-board"></div>
+
+    <div class="win-message hidden">
+        <h2>🎉 You Win! 🎉</h2>
+        <button id="restartBtn">Play Again</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
