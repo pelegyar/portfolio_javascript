@@ -1,0 +1,225 @@
+.nav-container {
+    border-top: 3px solid $primary-color;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    display: flex;
+    z-index: 3;
+
+    .navbar {
+        flex-wrap: wrap;
+
+        .hamburger {
+            display: none;
+        }
+
+        .profile-mobile {
+            display: none;
+        }
+
+        margin: 0 auto;
+        width: 80vw;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+
+
+        .navbar-left {
+            display: flex;
+            width: 600px;
+
+            a {
+
+                color: #000000;
+                text-align: center;
+                @include heebo(25px, 400);
+                text-transform: uppercase;
+                flex-grow: 1;
+                text-decoration: none;
+
+                &:first-child {
+                    color: $primary-color;
+                }
+
+                &:hover {
+
+                    background-color: $primary-color;
+                    border-radius: 10px;
+                    color: #fff;
+                    transition: .5s;
+                }
+            }
+        }
+    }
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+
+    a {
+
+        text-decoration: none;
+        color: #000;
+        font-family: satisfy;
+        font-size: 25px;
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 62px;
+            height: 62px;
+            border-radius: 50%;
+            margin: 0 15px;
+        }
+    }
+}
+
+
+.portfolio-container {
+    background-color: #13E8F163;
+    padding: 140px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .portfolio {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+
+        h1 {
+            @include heebo(80px, 900);
+            margin: 15px 0;
+            text-transform: uppercase
+        }
+
+        p {
+            @include heebo(20px, medium);
+            width: 850px;
+        }
+
+        .buttons-container {
+            width: 350px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 31px;
+
+            .project-button {
+                background-color: #1AE0EC;
+                width: 153px;
+                height: 30px;
+                border-radius: 15px;
+
+                a {
+                    @include heebo(14px, Medium);
+                    text-decoration: none;
+                    color: #2C2C2C;
+                    line-height: 2;
+
+                }
+            }
+        }
+    }
+}
+
+.images-container {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+    margin-bottom: 10px;
+
+    .images {
+        width: 80vw;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:570px) {
+    .navbar-left {
+        display: none;
+        width: 90vw;
+
+        a {
+            display: none;
+        }
+    }
+
+    .nav-container {
+        flex-wrap: wrap;
+
+
+        .navbar {
+            width: 95vw;
+            height: auto;
+
+            .hamburger {
+                display: block;
+                font-size: 37px;
+                color: #1AE0EC;
+
+                text-decoration: none;
+            }
+
+            .profile-mobile {
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    // margin: 0 15px;
+                }
+            }
+
+            .hamburger:hover~.navbar-left {
+                display: block;
+
+
+                a {
+                    display: block;
+
+                }
+            }
+
+        }
+    }
+
+    .profile {
+        display: none;
+    }
+
+    .portfolio-container {
+        .portfolio {
+
+            h1 {
+                font-size: 46px;
+            }
+
+            p {
+                width: 351px;
+                font-size: 15px;
+            }
+
+        }
+    }
+
+    .images-container {
+        .images {
+            flex-wrap: wrap;
+
+            img {
+                width: 45px;
+                height: 45px;
+            }
+        }
+    }
+}

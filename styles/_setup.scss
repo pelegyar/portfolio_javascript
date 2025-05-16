@@ -1,0 +1,9 @@
+$primary-color: #1AE0EC;
+$border-gray: #3A3A3A;
+$more-gray: #F6F6F6;
+
+@mixin heebo($font-size, $font-weight) {
+    font-family: heebo;
+    font-size: $font-size;
+    font-weight: $font-weight;
+}
